@@ -1,0 +1,18 @@
+<menu>
+	<p class="head">Categories</p>
+	{% for cato in site.categories | limit: 6 %}
+	<li><a href="">{{ cato | first }}</a></li>
+	{% endfor %}
+</menu>
+<menu>
+	<p class="head">Tags</p>
+	{% for tag in site.tags | limit: 20 %}
+	<li><a href="">{{ tag  | first }}</a></li>
+	{% endfor %}
+</menu>
+<menu>
+	<p class="head">Authors</p>
+	<li><a href="">Author 1</a></li>
+	<li><a href="">Author 2</a></li>
+	<li><a href="">Author 3</a></li>
+</menu>
