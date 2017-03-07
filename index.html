@@ -10,7 +10,7 @@ layout: home
 				{% for post in site.posts | limit: 12 %}
 				<div class="col-sm-6">
 					<article class="paper">
-						<img src="uploads/posts/{{ post.cover }}" alt="" class="cover">
+						<img src="{{site.baseurl}}/uploads/posts/{{ post.cover }}" alt="" class="cover">
 						<div class="content">
 							<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 							<p>{{ post.excerpt }}</p>
