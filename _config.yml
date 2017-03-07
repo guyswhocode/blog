@@ -37,7 +37,7 @@ url: http://guyswhocode.com
 baseurl: "http://guyswhocode.github.io/blog"
 
 # Permalink structure
-permalink: /blog/:title
+permalink: blog/:title
 
 # Exclude these files from your production _site
 exclude:
