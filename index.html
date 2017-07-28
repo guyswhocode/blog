@@ -6,19 +6,17 @@ layout: home
 	<div class="row">
 		<div class="col-sm-9">
 			<div class="row">
-
 				{% for post in site.posts | limit: 12 %}
-				<div class="col-sm-6">
+				<section id="home-page-posts" class="col-sm-6">
 					<article class="paper">
-						<img src="{{site.baseurl}}/uploads/posts/{{ post.cover }}" alt="" class="cover">
+						<img src="{{ site.baseurl }}/uploads/posts/{{ post.cover }}" alt="{{ post.title }}" class="cover">
 						<div class="content">
 							<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-							<p>{{ post.excerpt }}</p>
+							<p class="summary">{{ post.excerpt | strip_html }}</p>
 						</div>
 					</article>
-				</div>
+				</section>
 				{% endfor %}
-				
 			</div>
 		</div>
 		<div class="col-sm-3 sidebar">
