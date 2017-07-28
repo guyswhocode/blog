@@ -1,0 +1,14 @@
+section#home-page-posts article h2{
+	font-size: 1.7em;
+	font-weight: lighter;
+	margin-top: 4px;
+}
+section#home-page-posts article .summary{
+	font-size: 1em;
+	color: #555;
+	margin-bottom: 0px;
+	text-align: justify;
+}
+section#home-page-posts article h2 a{
+	color: #39D;
+}
